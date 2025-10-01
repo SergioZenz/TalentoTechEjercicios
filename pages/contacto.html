@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Lab - Contacto</title>
+</head>
+<body>
+    <header>
+        <h1></h1><strong>Datos de Contacto</strong></h1>
+    <h5>Por favor, ingrese sus datos para que podamos contactarlo... muchas gracias! <img src="../imagenes/capi2.png" alt="Logo capibara" width="40" height="40"></h5>
+    
+    </header> 
+    <nav>
+        <ol>
+            <li><a href="#Form_ingreso"><Strong>Registración</Strong></a></li>
+            <li><a href="#Registrados"><strong>Lista de ya registrados</strong></a></li>
+            <li><a href="../index.html"><strong>Volver</strong></a></li>
+        </ol>
+    </nav>
+    <section>
+        <h2 id="#Form_ingreso">Formulario de ingreso de datos</h2>
+        <form action="https://formspree.io/f/mpwyaopd" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Pepe"><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Sanchez"><br>
+            <label for="e-mail":>E-mail:</label>
+            <input type="email" name="email" id="e-mail" required placeholder="abcd@abcd.com.ar"> <br>
+            <label for="telefono":>Teléfono:</label>
+            <input type="number" name="telefono" id="telefono" required placeholder="01112345678"> <br>
+            <label> Mensaje: <textarea name="message"></textarea> </label>
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <h2 id="Registrados">Personas ya registradas en el sitio</h2>
+        <table border="2">
+            <caption>Datos de los usuarios</caption>
+            <thead>
+            <tr>
+                <th scope="col" rowspan="2">Apellido</th>
+                <th scope="col" rowspan="2">Nombre</th>
+                <th colspan="2">Contacto</th>
+            </tr>
+            <tr>
+                <th scope="col">E-mail</th>
+                <th scope="col">Ciudad</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Sanchez</td>
+                <td>Pepe</td>
+                <td>psanchez@prueba.com</td>
+                <td>01112345678</td>
+            </tr>
+            <tr>
+                <td>Perez</td>
+                <td>Juan</td>
+                <td>jperez@abcd.com</td>
+                <td>1122334455</td>
+            </tr>
+            <tr>
+                <td colspan="2">Cantidad de usuarios registrados</td>
+                <td colspan="2" style="text-align: center;">2</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
